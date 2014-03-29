@@ -1,0 +1,10 @@
+# LaTeX-crap
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+
+.*.sw[opn]
+.sw[opn]
