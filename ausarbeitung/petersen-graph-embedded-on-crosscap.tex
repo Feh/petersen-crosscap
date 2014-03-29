@@ -60,6 +60,7 @@
 
 \ifpdf
   \usepackage[pdftex]{graphicx}
+  \usepackage{float}
   \DeclareGraphicsExtensions{.pdf}
   \pdfcompresslevel=9
   \usepackage[%
@@ -216,7 +217,14 @@ using the software \emph{Maya} that visualizes the important aspects
 of this construction. In particular, this visualizations can be
 understood also by non-mathematicians.
 
-\section{The Petersen Graph}
+\section{Theoretical preliminaries}
+
+We will first explore the construction of the Petersen graph and the
+cross cap, highlighting interesting properties. We will then proceed
+to motivate the embedding of the Petersen graph on the surface of the
+cross cap.
+
+\subsection{The Petersen Graph}
 
 The Petersen Graph is an important example from graph theory that has
 proven to be useful in particular as a counterexample.
@@ -234,7 +242,7 @@ KG_{5,2}$, called so after the Danish mathematician Julius Petersen
 (1839--1910). See figures \ref{fig:petersen} and
 \ref{fig:petersen-twointersect}.
 
-\begin{figure}[h]
+\begin{figure}[p]
   \begin{subfigure}[t]{.45\textwidth}
     \centering
     \includegraphics[keepaspectratio=true,width=\textwidth]{../planar-graphs/petersen-grundlage.pdf}
@@ -268,7 +276,7 @@ The Petersen graph has the following interesting properties \cite{petersen}:
     chromatic index 4
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[p]
   \begin{subfigure}[t]{.45\textwidth}
     \centering
     \includegraphics[keepaspectratio=true,width=\textwidth]{../planar-graphs/petersen-vertex-threecoloring.pdf}
@@ -289,12 +297,48 @@ meaning it cannot be embedded into the plane with less than 2 edge
 intersections \cite[p.~2]{crossingnr}. It can, however, be embedded
 without any edge intersections on the surface of the cross cap.
 
-\section{The Cross Cap}
+\subsection{The Cross Cap}
 
+\begin{minipage}{0.55\textwidth}
+  The cross cap is a two-dimensional real manifold that is homeomorphic
+  tho the real projective plane $\mathbb{R}P^2$.
 
+  \begin{definition}[Real projective space]
+    The \emph{real projective space} $\mathbb{R}P^n$ consists of the lines
+    passing through the origin of $\mathbb{R}^{n+1}$. In the case $n=1$,
+    this is called the \emph{real projective line}; in the case $n=2$,
+    \emph{real projective plane}.
+  \end{definition}
 
+  An equivalent (and more intuitive) construction for $\mathbb{R}P^n$
+  can be given by identifying antipodal points of $S^n$. Hence, the real
+  projective plane is topologically equivalent to $D^2$ with antipodal
+  points at the border identified (see figure \ref{fig:rp2}).
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.35\textwidth}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio=true,width=\textwidth]{../planar-graphs/crosscap-construction.pdf}
+    \caption{The topological view: How to glue $[0,1]\times[0,1]$
+      together to construct the real projective plane.}
+    \label{fig:rp2}
+  \end{figure}
+\end{minipage}%
 
+\subsection{Embedding the Petersen graph on the cross cap}
 
+Using this “planar model” of $\mathbb{R}P^2$, we can now easily see
+that an embedding of the Petersen graph without edge intersection
+onto the surface of the cross cap is in fact possible:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[keepaspectratio=true,width=0.7\textwidth]{../planar-graphs/crosscap-embedding-5.pdf}
+  \caption{An embedding of the Petersen graph without edge
+    intersection on the surface of the cross cap.}
+  \label{fig:rp2-embedding}
+\end{figure}
 
 %%% }}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
