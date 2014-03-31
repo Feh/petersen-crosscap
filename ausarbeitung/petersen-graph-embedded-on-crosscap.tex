@@ -218,6 +218,7 @@ of this construction. In particular, this visualizations can be
 understood also by non-mathematicians.
 
 \section{Theoretical Preliminaries}
+\label{sec:theoretical}
 
 We will first explore the construction of the Petersen graph and the
 cross cap, highlighting interesting properties. We will then proceed
@@ -357,6 +358,60 @@ This result shows that it is in fact possible to embed the Petersen
 graph onto the cross cap without any edge intersection -- however,
 this model of the cross cap has hardly any resemblance of how a model
 of it would look like embedded in $\mathbb{R}^3$.
+
+
+\section{The \emph{Maya} Construction}
+
+Given that it is hard to grasp the “actual look” of the cross cap
+in its planar form, we realized it as a real 2-manifold embedded in
+$\mathbb{R}^3$. To do this, we chose the 3D modeling software
+\emph{Autodesk Maya} (or simply \emph{Maya}). It is a state-of-the-art
+system not only for modeling objects, but also for creating animations
+with these objects.
+
+Our goal was to create an insightful animation that highlights the
+following points we previously outlined in section
+\ref{sec:theoretical}:
+
+\begin{itemize}
+  \item How the cross cap can be constructed from gluing together flat
+    surfaces
+  \item How the cross cap will have self-intersections when embedded
+    in $\mathbb{R}^3$
+  \item How the Petersen graph can be embedded onto this surface
+  \item How and why this embedding will not have edge intersections
+\end{itemize}
+
+In the following sections we will present our motivation for designing
+the animation the way we did, and give a brief coverage of the
+technical steps that were necessary in \emph{Maya} to produce this
+result.
+
+\subsection{Constructing the Cross Cap}
+
+\begin{itemize}
+  \item Start with two cylinders
+  \item Glue them together appropriately
+  \item Apply a suitable texture to make self-intersection visible
+  \item Discussion: Why not use the Dodecahedron?
+\end{itemize}
+
+
+\subsection{Embedding the Petersen Graph}
+
+\begin{itemize}
+  \item Drawing on curves, and extruding the curves
+  \item Motivation for setting the points
+  \item Organizing the edges that pass by the cross-cap’s self-intersection
+\end{itemize}
+
+\subsection{Putting Together the Animation}
+
+\begin{itemize}
+  \item Choosing the proper lighting
+  \item Choosing the proper viewing angle and choosing the areas to look at
+\end{itemize}
+
 
 %%% }}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
