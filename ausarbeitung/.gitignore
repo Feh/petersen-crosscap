@@ -8,3 +8,4 @@
 
 .*.sw[opn]
 .sw[opn]
+*.fdb_latexmk
