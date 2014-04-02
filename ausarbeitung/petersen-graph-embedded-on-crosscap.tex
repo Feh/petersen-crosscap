@@ -20,11 +20,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Pakete {{{
-\usepackage[utf8]{inputenc}         % Umlaute etc.
+\usepackage[utf8x]{inputenc}
+\usepackage[greek,english]{babel}
 \usepackage[T1]{fontenc}            % T1-kodierte Fonts
-%\usepackage{ae,aecompl}             % Kodierung für PDF
-%\usepackage{ngerman}                % Deutsche Trennungen,
-                                    % dt. Begriffe
 \usepackage{setspace}               % Single- oder Onehalfspacing
 \setcounter{tocdepth}{4}            % 4 Hirarchien im Inhaltsv.
 \usepackage{times}                  % Times als Schrift
@@ -393,6 +391,21 @@ graph onto the cross cap without any edge intersection -- however,
 this model of the cross cap has hardly any resemblance of how a model
 of it would look like immersed in $\mathbb{R}^3$.
 
+
+\subsection{An Alternative Embedding Approach Using the Dodecahedron}
+
+It is possible to obtain the embedding described in the previous
+section along with a construction of the cross cap “in one step”. The
+\emph{(regular) dodecahedron} is the platonic solid that consists of
+12 regular pentagonal faces (gr.~\textgreek{δωδεκα}, twelve). Three of these faces
+meet at each vertex, hence the graph consisting of the 20 vertices and
+30 edges is cubic.
+
+One can now transfer the construction of $\mathbb{R}P^2$ from $S^2$ to
+the dodecahedron: Identifying antipodal points, we get a surface that
+consists of 6 faces and whose 10 vertices and 15 edges form the cubic
+Petersen graph. While this construction is very neat and elegant, it
+does not make clear how the Petersen graph appears on the surface.
 
 \section{The \emph{Maya} Construction}
 
