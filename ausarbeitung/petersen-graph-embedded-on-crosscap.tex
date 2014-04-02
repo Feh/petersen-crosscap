@@ -231,7 +231,8 @@ cross cap.
 \subsection{The Petersen Graph}
 
 The Petersen graph is an important example from graph theory that has
-proven to be useful in particular as a counterexample.
+proven to be useful in particular as a counterexample. It is most
+easily described as the special case of the \emph{Kneser graph}:
 
 \begin{definition}[Kneser graph]
   The \emph{Kneser graph of n, k} (denoted $KG_{n,k}$) consists of
@@ -241,19 +242,19 @@ proven to be useful in particular as a counterexample.
 \end{definition}
 
 This graph is ${n-k}\choose k$-regular and has a chromatic number of
-$n - 2k + 2$ \cite{kneser}. A special case is the Petersen graph $P =
-KG_{5,2}$, called so after the Danish mathematician Julius Petersen
-(1839--1910). See figures \ref{fig:petersen} and
-\ref{fig:petersen-twointersect}.
+$n - 2k + 2$ \cite{kneser}. The special case we will focus on is the
+Petersen graph $P = KG_{5,2}$, so called after the Danish
+mathematician Julius Petersen (1839--1910). See figures
+\ref{fig:petersen} and \ref{fig:petersen-twointersect}.
 
 \begin{figure}[p]
   \begin{subfigure}[t]{.45\textwidth}
     \centering
     \includegraphics[keepaspectratio=true,width=\textwidth]{../planar-graphs/petersen-grundlage.pdf}
-    \caption{Traditional realization of the Petersen graph in the plane.
-      The inner vertices and their edges form a pentagram; the outer
-      vertices form a pentagon. This version exhibits five edge
-      intersections.}
+    \caption{Traditional realization of the Petersen graph as
+    $KG_{5,2}$ in the plane. The inner vertices and their edges form a
+    pentagram; the outer vertices form a pentagon. This version
+    exhibits five edge intersections.}
     \label{fig:petersen}
   \end{subfigure}\hfill
   \begin{subfigure}[t]{.45\textwidth}
@@ -275,9 +276,13 @@ The Petersen graph has the following interesting properties \cite{petersen}:
     \ref{fig:color-vertex})
   \item It has chromatic index 4, meaning a minimum edge coloring must
     use at least four different colors (see \ref{fig:color-edge})
-  \item It is the smallest (and until 1946 the only known)
-    \emph{snark} -- that is, a connected, bridgeless cubic graph with
+  \item It is the smallest
+    \emph{snark}\footnotemark{} -- that is, a connected, bridgeless cubic graph with
     chromatic index 4
+    \footnotetext{Julius Petersen constructed this graph in order to show
+    that not all connected, bridgeless cubic graphs have chromatic
+    index 3. In fact the Petersen graph, constructed in 1898 by
+    Petersen, remained the only known counterexample until 1946.}
 \end{itemize}
 
 \begin{figure}[p]
@@ -297,9 +302,10 @@ The Petersen graph has the following interesting properties \cite{petersen}:
 \end{figure}
 
 The Petersen graph has crossing number $\operatorname{cr}(P) = 2$,
-meaning it cannot be embedded into the plane with less than 2 edge
+meaning it cannot be embedded into the real number plane with less than 2 edge
 intersections \cite[p.~2]{crossingnr}. It can, however, be embedded
-without any edge intersections on the surface of the cross cap.
+without any edge intersections in the real projective plane, a model
+of which is the cross cap.
 
 \subsection{The Cross Cap}
 
