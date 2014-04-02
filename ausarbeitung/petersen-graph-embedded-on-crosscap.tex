@@ -306,6 +306,7 @@ without any edge intersections in the real projective plane, a model
 of which is the cross cap.
 
 \subsection{The Real Projective Plane and the Cross Cap}
+\label{sec:rp2}
 
 \begin{definition}[Real projective space]
   The \emph{real projective space} $\mathbb{R}P^n$ consists of the lines
@@ -358,6 +359,7 @@ homeomorphic to the real projective plane $\mathbb{R}P^2$. It will
 serve as our model of the real projective plane in $\mathbb{R}^3$.
 
 \subsection{Embedding the Petersen Graph on the Cross Cap}
+\label{sec:rp2embedding}
 
 Using this “planar model” of $\mathbb{R}P^2$, we can now easily see
 that an embedding of the Petersen graph without edge intersection onto
@@ -367,7 +369,7 @@ edge intersections (figure \ref{fig:petersen-twointersect}), leaving
 out all the edges that would intersect.
 Embedded in $\mathbb{R}P^2$ (figure \ref{fig:rp2}) one now draws the
 remaining edges in the following fashion, taking the orange line as an
-example (cf. figure \ref{fig:rp2-embedding}):
+example (cf. figure \ref{fig:rp2embedding}):
 Draw the edge to leave the $[0,1]\times[0,1]$ square (with origin at
 the lower left, say) at $(0,\,1/4)$.
 Because the red sides are glued together with opposite orientation,
@@ -383,7 +385,7 @@ Neither of these points induce a crossing.
   \includegraphics[keepaspectratio=true,width=0.7\textwidth]{../planar-graphs/crosscap-embedding-5.pdf}
   \caption{An embedding of the Petersen graph without edge
     intersection on the surface of the cross cap.}
-  \label{fig:rp2-embedding}
+  \label{fig:rp2embedding}
 \end{figure}
 
 This result shows that it is in fact possible to embed the Petersen
@@ -422,8 +424,8 @@ following points we previously outlined in section
 \ref{sec:theoretical}:
 
 \begin{itemize}
-  \item How the cross cap can be constructed from gluing together flat
-    surfaces
+  \item How the cross cap can be constructed from gluing together a
+    flat surface
   \item How the cross cap will have self-intersections when embedded
     in $\mathbb{R}^3$
   \item How the Petersen graph can be embedded onto this surface
@@ -437,57 +439,92 @@ result.
 
 \subsection{Constructing the Cross Cap}
 
-\begin{itemize}
-  \item Start with two cylinders
-  \item Glue them together appropriately
-  \item Apply a suitable texture to make self-intersection visible
-  \item Discussion: Why not use the Dodecahedron?
-\end{itemize}
+Initially we tried a construction of the cross cap starting with a
+dodecahedron as outlines in section~\ref{sec:dodecahedron} and
+motivated by \cite[p.~270f]{bilderbuch}. Maya, however, is not mainly
+a tool to model mathematical surfaces; hence a standard topological
+construction of point identification is possible to achieve, but only
+vertex or edge-wise.
 
+Analogously to the construction in \ref{sec:rp2}, one can start of
+with one half of the dodecahedron and continue to identify border
+edges and vertices. This works well in practice -- however the
+resulting object is very difficult to comprehend in 3-space.
+
+So despite losing the main advantage of the dodecahedron construction
+method -- that it is producing the Petersen graph “for free” from the
+original edges -- we chose the cross cap as depicted in \cite[section~1.7]{rp2} as
+this model is more symmetric and gives a better idea of the object
+itself.
+
+To model the cross cap, instead of employing a parametrization, we used
+the readily available modeling tools of Maya.
+Starting of with a highly subdivided grid, we bent and flared it in
+the right directions getting an object very close to the parametrized
+cross cap (cf.~\cite{rp2}).
+
+In order to make the self-intersection of the cross cap visible, we
+designed a texture for our surface in such a way that at will make our
+surface appear to have an actual intersection.
+
+\begin{itemize}
+  \item Screenshot of this construction? Maybe 2x
+  \item An image of the texture in planar space?
+\end{itemize}
 
 \subsection{Embedding the Petersen Graph}
 
+To add the Petersen graph we projected suitable curves on the surface,
+according to the construction described in
+section~\ref{sec:rp2embedding}.
+This is done via \emph{... > Draw on surface}.
+At the self-intersection, we manually chose on which part of the surface
+the curve will continue.
+We subsequently thickend them, and in particular used sphere
+primitives to indicate the vertices of the graph.
+
 \begin{itemize}
-  \item Drawing on curves, and extruding the curves
-  \item Motivation for setting the points
-  \item Organizing the edges that pass by the cross-cap’s self-intersection
+  \item Which steps were used? Screenshot of this construction
 \end{itemize}
 
 \subsection{Putting Together the Animation}
 
-\begin{itemize}
-  \item Choosing the proper lighting
-  \item Choosing the proper viewing angle and choosing the areas to look at
-\end{itemize}
-
-\section{The Animation}
-
-In the last section we have seen how the Petersen graph can be embedded into the $\mathbb{R}P^2$ using a planar model. In our  animation we extended the visualization to a three dimensional level and taking advantage of being able to move around the object. Thus we created a vehicle to give a much more intuitive feeling of the crosscap(i.e. the $\mathbb{R}P^2$) itself and how the Peterson graph embedding does like.
+In the last section we have seen how the Petersen graph can be
+embedded into the $\mathbb{R}P^2$ using a planar model. In our
+animation we extended the visualization to a three dimensional level
+and taking advantage of being able to move around the object. Thus we
+created a vehicle to give a much more intuitive feeling of the
+crosscap (i.e. the $\mathbb{R}P^2$) itself and how the Peterson graph
+embedding does like.
 
 In this section we will point out the aspects our animation is showing and also briefly explain the construction process.
 
 \subsection{Highlights of the Animation}
 
-The first part of our animation shows the cross cap being viewed by a camera going around the object. By seeing an object in (passive) motion the viewer is able to get an advanced picture of the focussed object. The route of the camera is chosen, such that the viewer will get a view from all important perspectives and be able to make a hole 3D picture on her own.
+The first part of our animation shows the cross cap being viewed by a
+camera going around the object. By seeing an object in (passive)
+motion the viewer is able to get an advanced picture of the focussed
+object. The route of the camera is chosen such that the viewer will
+get a glance from all important perspectives and be able to make a hole
+three-dimensional picture on her own.
 
-A special highlight is that we chose the texture to indicate the necessary selfintersection the object exhibits when displayed (and not embedded!) in three dimensional space. So the viewer sees the smooth structure of the object being violated at the selfintersection at a first glance. At the second glance he will see, how the smooth structure actually continues on the first occluded side of the object. \\
+A special highlight is that we chose the texture to indicate the
+necessary selfintersection the object exhibits when immersed
+in three dimensional space. This way, the viewer immediately sees that at the
+intersection, the otherwise smooth gradient coloring
+of the surface object suddenly breaks. At second glance she will see
+how the coloring actually continues smoothly, but on the previously
+obstructed “underside”.
 
-The second part of our animation shows how the Petersen graph is drawn on the surface of the cross cap. As motivation for the drawing order we used figure ...4... first drawing the lines in the middle that can be drawn without self intersection of edges even in the plane.
-Then the camera makes a dramatic change focussing on how each particular of the remaining lines is drawn on the surface without producing any self intersection.
+In the second part of our animation, we show how the Petersen graph is drawn
+on the surface of the cross cap. As motivation for the drawing order
+we use figure \ref{fig:rp2embedding}, first drawing the lines in the
+middle that can be drawn without self intersection of edges even in
+the plane.
 
-\subsection{Construction of the animation}
-
-The object of most interest in our animation is the crosscap itself. First we started of using the constructionmethod being motivated in ...the article... . Right at the beginning by trying to understand the construction chosen in ...the article... we encountered the problem of having to spend a lot of imagination to get a grasp of the three dimensional model. On the other hand wikipedia provided pictures of the homeomorphic equivalent cross cap, that gave a better intuition.
-
-Inspite the main advantage of the dodecahedron construction method -- subdividing the dodecahedron, cutting of its half and identifying the opposite (now "'open"') edges -- which is producing the Petersen graph "'for free"' as the original edges of the dodecahedron we chose the cross cap as depicted on wikipedia as this model was more symmetric giving a better idea of the object itself. \\
-
-To model the crosscap instead of employing a parametrization, we used the modeling tools of maya that are quite intuitive to handle. So starting of with a highly subdivided grid we bent and flared it in the right directions getting an object very close to the parametrized cross cap version found in the internet.
-
-To add the Petersengraph we projected suitable curves on the surface and thickend them in particular using sphere primitives to indicate the vertices of the graph. \\
-
-A last detail being worth mentioned is the choice of the texture map. Using a practical construction that is different from the mathmatical one we were able to employ the texture map from figure using the indicated gluing pattern. In the 3D modell one can easily see how this texture map perfectly indicates the selfintersection without taking use of a parametrization imitating the true self intersection. \\
-
-And now lean back and enjoy the animation! :)
+Then the camera makes a dramatic move, focussing on how each of the
+remaining lines is drawn on the surface without producing any self
+intersection.
 
 %%% }}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
