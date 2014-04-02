@@ -55,6 +55,7 @@ index 4 (i.e. it does not have an edge 3-coloring).
     * In fact the smallest possible snark (discovered 1898)
     * Tait 1880: Four Color Theorem equivalent to: No snark is planar
 * Crossing number of Petersen graph is 2
+* Cannot be embedded into $\mathbb{R}^2$
 
 The Petersen Graph (IV)
 =======================
@@ -65,3 +66,42 @@ The Petersen Graph (IV)
 \end{figure}
 
 The minimum number of edge intersections in the plane is 2
+
+Real Projective Plane and Cross Cap
+===================================
+
+**Definition:**
+The *real projective space* $\mathbb{R}P^n$ consists of the lines
+passing through the origin of $\mathbb{R}^{n+1}$. In the case $n=1$,
+this is called the \emph{real projective line}; in the case $n=2$,
+*real projective plane*.
+
+* Equivalent constructions
+    * Identify antipodal points of $S^n$
+    * Identify antipodal border points of $D^{n-1}$
+
+Real Projective Plane and Cross Cap (II)
+========================================
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[keepaspectratio=true,width=0.8\textwidth,height=0.8\textheight]
+  {../planar-graphs/crosscap-construction.pdf}
+\end{figure}
+
+How to construct $\mathbb{R}^2$ from $[0,1]\times[0,1]$ by identifying border points
+
+Real Projective Plane and Cross Cap (III)
+=========================================
+
+* Cross cap is a real 2-manifold homeomorphic to $\mathbb{R}P^2$
+* Surface is a path-connected, compact, closed, non-orientable manifold
+* Surface cannot be embedded in $\mathbb{R}^3$
+    * Homology in degree 1: $H_1(\mathbb{R}P^n;\;\mathbb{Z}) = \mathbb{Z}/2\mathbb{Z}$
+    * Alexander duality: Homology of $X\subset\mathbb{R}^n$ has no torsion in degrees $n-1$ and $n-2$
+* Instead has to be *immersed* (“local embedding”)
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+... Slide show ...
