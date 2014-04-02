@@ -1,0 +1,73 @@
+<[autotemplate]
+documentclass={beamer}
+usecolortheme={default}
+
+setbeamertemplate={navigation symbols}{}
+setbeamertemplate={navigation symbols}{}
+setbeamertemplate={blocks}[rounded][shadow=true]
+setbeamercolor={block title}{bg=blue!20!white}
+setbeamercolor={block body}{bg=blue!5!white}
+
+usepackage=[utf8]{inputenc}
+usepackage=[T1]{fontenc}
+usepackage={graphicx}
+usepackage={lmodern}
+titleframe=False
+[autotemplate]>
+
+% more spaces
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{2pt}
+\let\olditem\item
+\renewcommand{\item}{
+    \setlength{\itemsep}{\wideitemsep}
+    \olditem
+}
+
+\begin{frame}
+    \title{Embedding the Petersen Graph on the Cross Cap}
+    \author{Julius Plenz / Martin Zänker}
+    \date{2013-12-16}
+    \titlepage
+\end{frame}
+
+==== Petersen Graph ====
+
+* Special Case of the Kneser Graph ($KG_{5,2}$)
+* Chromatic number of $KG_{n,k}$ is $n - 2k + 2$
+* Will have intersecting edges in any realization in $\mathbb{R}^2$
+* Smallest bridgeless cubic graph with no three-edge-coloring
+
+<[block]{Donald Knuth about the Petersen Graph}
+[The Petersen Graph is] a remarkable configuration that serves as a
+counterexample to many optimistic predictions about what might be true for
+graphs in general.
+[block]>
+
+==== The Petersen Graph and a Three-Coloring ====
+
+\begin{center}
+<<<petersen-graph.png,width=0.7\textwidth>>>
+\end{center}
+
+\hfill\footnotesize{Image: Wikipedia / Public Domain}
+
+==== The Cross Cap ====
+
+* Homeomorphic to $\mathbb{R}P^2$, the real projective plane
+* Obtained by identifying border points of the a two-cover of $D^2$
+* Cannot be realized without self-intersection in $\mathbb{R}^3$
+
+\begin{center}
+<<<CrossCapSlicedOpen.PNG,width=0.6\textwidth>>>
+\end{center}
+\hfill\footnotesize{Image: Wikimedia Commons / GNU FDL}
+
+==== Plan ====
+
+* Research graph-theoretical properties of the Petersen Graph
+* Research topological properties of the Cross Cap
+* Create a realization of the Cross Cap in Maya
+* Embed the Petersen Graph with a suitable coloring in the Cross Cap realization
+* Create an insightful animation of the embedding
