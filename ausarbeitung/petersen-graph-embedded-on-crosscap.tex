@@ -307,23 +307,26 @@ intersections \cite[p.~2]{crossingnr}. It can, however, be embedded
 without any edge intersections in the real projective plane, a model
 of which is the cross cap.
 
-\subsection{The Cross Cap}
+\subsection{The Real Projective Plane and the Cross Cap}
 
+\begin{definition}[Real projective space]
+  The \emph{real projective space} $\mathbb{R}P^n$ consists of the lines
+  passing through the origin of $\mathbb{R}^{n+1}$. In the case $n=1$,
+  this is called the \emph{real projective line}; in the case $n=2$,
+  \emph{real projective plane}.
+\end{definition}
+%
 \begin{minipage}{0.55\textwidth}
-  The cross cap is a two-dimensional real manifold that is homeomorphic
-  tho the real projective plane $\mathbb{R}P^2$.
-
-  \begin{definition}[Real projective space]
-    The \emph{real projective space} $\mathbb{R}P^n$ consists of the lines
-    passing through the origin of $\mathbb{R}^{n+1}$. In the case $n=1$,
-    this is called the \emph{real projective line}; in the case $n=2$,
-    \emph{real projective plane}.
-  \end{definition}
-
   An equivalent (and more intuitive) construction for $\mathbb{R}P^n$
-  can be given by identifying antipodal points of $S^n$. Hence, the real
-  projective plane is topologically equivalent to $D^2$ with antipodal
-  points at the border identified (see figure \ref{fig:rp2}).
+  can be given by identifying antipodal points of $S^n$: Since any
+  line passing through the origin meets the sphere at exactly two
+  antipodal points, one can identify a line by either of these points.
+  Hence, the real projective plane is topologically equivalent to
+  $D^2$ with antipodal points at the border identified.
+
+  Stretching the imagination a little bit, we can picture $D^2$ as the
+  topologically equivalent unit square. The identification of
+  antipodal border points then happens as in figure \ref{fig:rp2}.
 \end{minipage}%
 \hfill%
 \begin{minipage}{0.35\textwidth}
@@ -335,6 +338,26 @@ of which is the cross cap.
     \label{fig:rp2}
   \end{figure}
 \end{minipage}%
+
+The homology of $\mathbb{R}P^n$ is \cite[2.42]{hatcher}:
+\[
+  H_k(\mathbb{R}P^n;\;\mathbb{Z}) =
+                   \begin{cases}
+                      \mathbb{Z} & \text{if }k = 0\text{ or }k = n\text{ odd} \\
+                      \mathbb{Z}/2\mathbb{Z} & \text{if $k$ odd and } 0 < k < n \\
+                      0 & \text{otherwise} \\
+                   \end{cases}
+\]
+As a corollary of the Alexander duality \cite[3.45]{hatcher}, any compact and locally
+contractible subspace of $\mathbb{R}^n$ is torsion-free in homology of
+degree $n-2$. But $H_1(\mathbb{R}P^2;\;\mathbb{Z}) = \mathbb{Z}/2\mathbb{Z}$, hence
+the real projective plane cannot be embedded into $\mathbb{R}^3$; it
+can only be \emph{immersed}, i.\,e.~it can be locally embedded at any
+point.
+
+The \emph{cross cap} is a two-dimensional real manifold that is
+homeomorphic to the real projective plane $\mathbb{R}P^2$. It will
+serve as our model of the real projective plane in $\mathbb{R}^3$.
 
 \subsection{Embedding the Petersen graph on the cross cap}
 
