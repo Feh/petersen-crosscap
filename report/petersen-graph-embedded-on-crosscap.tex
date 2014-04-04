@@ -521,20 +521,45 @@ surface appear to have an actual self-intersection.
 \end{figure}
 \end{landscape}
 
+% Work around strange effect with figure/subfigure on landscape page
+\addtocounter{figure}{-1}
+
 \subsection{Embedding the Petersen Graph}
 
 To add the Petersen graph we projected suitable curves on the surface,
 according to the construction described in
-section~\ref{sec:rp2embedding}.
-This is done via \emph{... > Draw on surface}.
+section~\ref{sec:rp2embedding} -- see figure~\ref{fig:construction05}.
 At the self-intersection, we manually chose on which part of the surface
 the curve will continue.
 We subsequently thickened them, and in particular used sphere
 primitives to indicate the vertices of the graph.
 
-\begin{itemize}
-  \item Which steps were used? Screenshot of this construction
-\end{itemize}
+\begin{figure}[h]
+  \caption{The final construction steps: Drawing the Petersen graph and
+    applying a texture}
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction05.png}
+    \caption{\label{fig:construction05}%
+      Using the \emph{Make selected object live} switch, draw cubic EP
+      curves on the surface. Create a NURBS circle primitive orthogonal
+      to the line drawn and use the \emph{Surface / Extrude} tool:
+      This will produce the cartesian product of the circle along the
+      curve. A slightly bigger sphere primitive will serve as vertex
+      of the graph.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction06.png}
+    \caption{The surface is still a plane bent to look like a closed
+      2-manifold. Apply a suitable texture to make clear how the
+      self-intersection happens, even though the surface itself does
+      not actually self-intersect. The texture should be
+      half-transparent to give a good view of all vertices and edges,
+      regardless of their position.}
+  \end{subfigure}
+\end{figure}
 
 \subsection{Highlights of the Animation}
 
