@@ -7,10 +7,7 @@ Overview
 
 1. The *Petersen graph* and its properties
 1. Construction of the *cross cap* and its properties
-1. Creating an animation in Maya
-    1. The cross cap
-    1. The Petersen graph
-1. Showcasing of the animation
+1. Showcasing of the animation / Explanations
 
 The Kneser Graph
 ================
@@ -48,14 +45,15 @@ A vertex 3-coloring and edge 4-coloring of the Petersen graph
 The Petersen Graph (III)
 ========================
 
+* Historical motivation: Petersen graph is a snark
+    * In fact the smallest possible snark (discovered 1898)
+    * Tait 1880: Four Color Theorem equivalent to: No snark is planar
+
 **Definition:** A *Snark* is a connected, bridgeless cubic graph with chromatic
 index 4 (i.e. it does not have an edge 3-coloring).
 
-* Petersen graph is a snark
-    * In fact the smallest possible snark (discovered 1898)
-    * Tait 1880: Four Color Theorem equivalent to: No snark is planar
 * Crossing number of Petersen graph is 2
-* Cannot be embedded into $\mathbb{R}^2$
+* Cannot be embedded in the Euclidean plane $\mathbb{R}^2$
 
 The Petersen Graph (IV)
 =======================
@@ -100,6 +98,7 @@ Real Projective Plane and Cross Cap (III)
     * Homology in degree 1: $H_1(\mathbb{R}P^n;\;\mathbb{Z}) = \mathbb{Z}/2\mathbb{Z}$
     * Alexander duality: Homology of $X\subset\mathbb{R}^n$ has no torsion in degrees $n-1$ and $n-2$
 * Instead has to be *immersed* (“local embedding”)
+    * Manifold will have self-intersections
 
 Embedding the Petersen Graph on the Cross Cap
 =============================================
