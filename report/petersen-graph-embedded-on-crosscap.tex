@@ -48,6 +48,8 @@
   \usepackage{caption}
   \usepackage{subcaption}
 
+  \usepackage{pdflscape}
+
 %%% Layout
 \usepackage{scrpage2}               % KOMA-Überschriften und -Fußzeilen.
 %%% }}}
@@ -470,20 +472,54 @@ method, we chose the cross cap as depicted in \cite[section~1.7]{rp2}
 as this model is more symmetric and gives a better idea of the object
 itself.
 
-To model the cross cap, instead of employing a parametrization, we used
+To model a symmetric cross cap, instead of employing a parametrization, we used
 the readily available modeling tools of Maya.
 Starting of with a highly subdivided grid, we bent and flared it in
 the right directions, getting an object very close to the parametrized
-cross cap (cf.~\cite{rp2}).
+cross cap (cf.~\cite{rp2}). For the construction process, see
+figures~\ref{fig:construction}a--d on page \pageref{fig:construction}.
 
 In order to make the self-intersection of the cross cap visible, we
-designed a texture for our surface in such a way that at will make our
-surface appear to have an actual intersection.
+designed a texture for our surface in such a way that it will make our
+surface appear to have an actual self-intersection.
 
-\begin{itemize}
-  \item Screenshot of this construction? Maybe 2x
-  \item An image of the texture in planar space?
-\end{itemize}
+\begin{landscape}
+\begin{figure}[p]
+  \vspace{-1em}
+  \caption{\label{fig:construction}%
+    The construction process of the cross cap model}
+  \vspace{.5em}
+  \begin{subfigure}[t]{10cm}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction01.png}
+    \caption{Starting with a highly subdivided polygonal surface,
+      bend it to a tube with the \emph{Deformation / Nonlinear Bend}
+      tool.}
+  \end{subfigure}
+  \hspace{2em}
+  \begin{subfigure}[t]{10cm}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction02.png}
+    \caption{Press down both sides of the tube using the
+      \emph{Deformation / Nonlinear Flare} tool. Adjust the parameters
+      of the tool so that the middle still bulges.}
+  \end{subfigure}\\[2em]
+  \begin{subfigure}[t]{10cm}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction03.png}
+    \caption{Applying another \emph{Deformation / Nonlinear Bend}
+      around the center, bring together the two “flattened” ends of
+      the tube.}
+  \end{subfigure}
+  \hspace{2em}
+  \begin{subfigure}[t]{10cm}
+    \centering
+    \includegraphics[width=\textwidth]{screenshots/construction04.png}
+    \caption{Moving the bend handle from step (c),
+      “close” the hole in the middle of the figure.}
+  \end{subfigure}
+\end{figure}
+\end{landscape}
 
 \subsection{Embedding the Petersen Graph}
 
