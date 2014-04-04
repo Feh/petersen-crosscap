@@ -239,10 +239,12 @@ easily described as the special case of the \emph{Kneser graph}:
   to the vertices are disjoint.
 \end{definition}
 
-This graph is ${n-k}\choose k$-regular and has a chromatic number of
-$n - 2k + 2$ \cite{kneser}. The special case we will focus on is the
+The graph $KG_{n,k}$ is ${n-k}\choose k$-regular, i.\,e.~at each
+vertex, ${n-k}\choose k$ edges meet.
+The special case we will focus on is the
 Petersen graph $P = KG_{5,2}$, so called after the Danish
-mathematician Julius Petersen (1839--1910). See figures
+mathematician Julius Petersen (1839--1910). It is 3-regular and has 10
+vertices and 15 edges. See figures
 \ref{fig:petersen} and \ref{fig:petersen-twointersect}.
 
 \begin{figure}[p]
@@ -274,15 +276,25 @@ The Petersen graph has the following interesting properties \cite{petersengraphb
     \ref{fig:color-vertex})
   \item It has chromatic index 4, meaning a minimum edge coloring must
     use at least four different colors (see \ref{fig:color-edge})
-  \item It is the smallest
-    \emph{snark}\footnotemark{} -- that is, a connected, bridgeless cubic graph with
-    chromatic index 4
-    \footnotetext{Julius Petersen constructed this graph in order to show
+  \item It is the smallest \emph{snark}\footnotemark[1]{} -- a
+    connected, bridgeless\footnotemark[2]{}, 3-regular graph with chromatic index 4
+    \footnotetext[1]{Julius Petersen constructed this graph in order to show
     that not all connected, bridgeless cubic graphs have chromatic
     index 3. In fact the Petersen graph, constructed in 1898 by
     Petersen, remained the only known counterexample until 1946
-    (cf.~\cite[p.~71]{petersengraphbook}).}
+    (cf.~\cite[p.~71]{petersengraphbook}).}%
+    \footnotetext[2]{Removing an arbitrary edge will not break the
+    connectedness of the graph.}
+  \item It has crossing number $\operatorname{cr}(P) = 2$,
+    meaning it cannot be embedded into the Euclidean plane
+    $\mathbb{R}^2$  with less than 2 edge intersections
+    (cf.~\cite[p.~2]{crossingnr}, see figure~%
+    \ref{fig:petersen-twointersect}).
 \end{itemize}
+
+The Petersen graph can, however, be embedded without any edge
+intersections in the real projective plane, a model of which is the
+cross cap.
 
 \begin{figure}[p]
   \begin{subfigure}[t]{.45\textwidth}
@@ -299,12 +311,6 @@ The Petersen graph has the following interesting properties \cite{petersengraphb
   \end{subfigure}
   \caption{The Petersen graph has chromatic number 3 and chromatic index 4}
 \end{figure}
-
-The Petersen graph has crossing number $\operatorname{cr}(P) = 2$,
-meaning it cannot be embedded into the real number plane with less than 2 edge
-intersections \cite[p.~2]{crossingnr}. It can, however, be embedded
-without any edge intersections in the real projective plane, a model
-of which is the cross cap.
 
 \subsection{The Real Projective Plane and the Cross Cap}
 \label{sec:rp2}
