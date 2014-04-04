@@ -429,7 +429,7 @@ does not make clear how the Petersen graph appears on the surface.
 Given that it is hard to grasp the “actual look” of the cross cap
 in its planar form, we realized it as a real 2-manifold embedded in
 $\mathbb{R}^3$. To do this, we chose the 3D modeling software
-\emph{Autodesk Maya} (or simply \emph{Maya}). It is a state-of-the-art
+\emph{Autodesk Maya\textregistered} (or simply \emph{Maya}). It is a state-of-the-art
 system not only for modeling objects, but also for creating animations
 with these objects.
 
@@ -438,12 +438,10 @@ following points we previously outlined in section
 \ref{sec:theoretical}:
 
 \begin{itemize}
-  \item How the cross cap can be constructed from gluing together a
-    flat surface
-  \item How the cross cap will have self-intersections when embedded
-    in $\mathbb{R}^3$
+  \item How the cross cap can be immersed in Euclidean space $\mathbb{R}^3$
+  \item How the immersion will have self-intersections
   \item How the Petersen graph can be embedded onto this surface
-  \item How and why this embedding will not have edge intersections
+  \item How this embedding will not have edge intersections
 \end{itemize}
 
 In the following sections we will present our motivation for designing
@@ -454,27 +452,28 @@ result.
 \subsection{Constructing the Cross Cap}
 
 Initially we tried a construction of the cross cap starting with a
-dodecahedron as outlines in section~\ref{sec:dodecahedron} and
-motivated by \cite[p.~270f]{bilderbuch}. Maya, however, is not mainly
-a tool to model mathematical surfaces; hence a standard topological
-construction of point identification is possible to achieve, but only
-vertex or edge-wise.
+dodecahedron as outlined in section~\ref{sec:dodecahedron} and
+motivated by \cite[p.~270f]{bilderbuch}.
+A standard topological construction of point identification is
+possible to achieve vertex or edge-wise:
+Analogously to the construction of $\mathbb{R}P^2$ from $S^2$,
+one can start off with one half of the dodecahedron and continue to
+identify border edges and vertices, bending and inflating the object
+in the process.
+The advantage of this process is that it is producing the Petersen
+graph “for free” from the original edges.
 
-Analogously to the construction in \ref{sec:rp2}, one can start of
-with one half of the dodecahedron and continue to identify border
-edges and vertices. This works well in practice -- however the
+This construction process works well in practice -- however the
 resulting object is very difficult to comprehend in 3-space.
-
-So despite losing the main advantage of the dodecahedron construction
-method -- that it is producing the Petersen graph “for free” from the
-original edges -- we chose the cross cap as depicted in \cite[section~1.7]{rp2} as
-this model is more symmetric and gives a better idea of the object
+So despite losing the advantage of the dodecahedron construction
+method, we chose the cross cap as depicted in \cite[section~1.7]{rp2}
+as this model is more symmetric and gives a better idea of the object
 itself.
 
 To model the cross cap, instead of employing a parametrization, we used
 the readily available modeling tools of Maya.
 Starting of with a highly subdivided grid, we bent and flared it in
-the right directions getting an object very close to the parametrized
+the right directions, getting an object very close to the parametrized
 cross cap (cf.~\cite{rp2}).
 
 In order to make the self-intersection of the cross cap visible, we
