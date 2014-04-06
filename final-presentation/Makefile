@@ -7,3 +7,6 @@ $(BASE).pdf: $(BASE).tex
 
 $(BASE).tex: $(BASE).markdown
 	pandoc -s -f markdown -t beamer -o $(BASE).tex < $(BASE).markdown
+
+clean:
+	latexmk -CA
