@@ -103,4 +103,98 @@ Real Projective Plane and Cross Cap (III)
 Embedding the Petersen Graph on the Cross Cap
 =============================================
 
-... Slide show ...
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-01.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-02.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-03.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-04.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-05.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-06.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-07.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-08.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-09.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-10.pdf}
+\end{figure}
+
+
+Embedding the Petersen Graph on the Cross Cap
+=============================================
+
+\begin{figure}
+\centering
+\includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-11.pdf}
+\end{figure}
+
