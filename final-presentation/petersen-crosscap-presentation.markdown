@@ -198,3 +198,13 @@ Embedding the Petersen Graph on the Cross Cap
 \includegraphics[height=0.6\textheight]{../planar-graphs/crosscap-embedding-11.pdf}
 \end{figure}
 
+
+Questions?
+==========
+
+\setbeamerfont{oneword}{size*={40pt}{0pt},series=\bfseries,parent={frametitle}}
+\usebeamerfont{oneword}
+Thanks!
+\begin{flushright}
+Questions?
+\end{flushright}
