@@ -208,3 +208,35 @@ Thanks!
 \begin{flushright}
 Questions?
 \end{flushright}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../report/screenshots/construction01.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../report/screenshots/construction02.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../report/screenshots/construction03.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../report/screenshots/construction04.png}
+\end{figure}
