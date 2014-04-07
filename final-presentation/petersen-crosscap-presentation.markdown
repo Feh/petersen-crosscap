@@ -47,13 +47,13 @@ The Petersen Graph (III)
 
 * Historical motivation: Petersen graph is a snark
     * In fact the smallest possible snark (discovered 1898)
-    * Tait 1880: Four Color Theorem equivalent to: No snark is planar
 
 **Definition:** A *Snark* is a connected, bridgeless cubic graph with chromatic
 index 4 (i.e. it does not have an edge 3-coloring).
 
-* Crossing number of Petersen graph is 2
+* Tait 1880: Four Color Theorem equivalent to: No snark is planar
 * Cannot be embedded in the Euclidean plane $\mathbb{R}^2$
+* Crossing number of Petersen graph is 2
 
 The Petersen Graph (IV)
 =======================
@@ -76,7 +76,7 @@ this is called the \emph{real projective line}; in the case $n=2$,
 
 * Equivalent constructions
     * Identify antipodal points of $S^n$
-    * Identify antipodal border points of $D^{n-1}$
+    * Identify antipodal border points of $D^n$
 
 Real Projective Plane and Cross Cap (II)
 ========================================
