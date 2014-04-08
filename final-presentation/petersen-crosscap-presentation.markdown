@@ -214,6 +214,38 @@ Thanks!
 Questions?
 \end{flushright}
 
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{OldCrossCap/d1.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{OldCrossCap/d2.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{OldCrossCap/d3.png}
+\end{figure}
+
+Cross Cap Construction
+======================
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{OldCrossCap/d4.png}
+\end{figure}
 Cross Cap Construction
 ======================
 
